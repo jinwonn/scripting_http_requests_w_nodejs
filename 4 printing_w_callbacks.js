@@ -10,13 +10,12 @@ function getHTML (options, callback) {
     
     response.on('data', function (data) {
       html += data;
-
     });
 
     response.on('end', function () {
-    return printHTML(html)
+    return printHTML(html);
     });
-  })
+  });
 }
 
 function printHTML (html) {
@@ -28,4 +27,4 @@ var requestOptions = {
   path: '/http-examples/step4.html'
 };
 
-getHTML(requestOptions, printHTML())
+getHTML(requestOptions, printHTML());
