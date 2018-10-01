@@ -16,18 +16,6 @@ function getAndPrintHTMLChunks () {
     response.on('data', function (data) {
       console.log(data);
     });
-
-    response.on('finish', function (data) {
-      console.log('complete');
-    })
-
-  //   response.on('data', function (data) {
-  //     console.log(data);
-  //   });
-
-  //   response.on('end', function() {
-  //     console.log('complete')
-  //   })
   })
 
 }
